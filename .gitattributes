@@ -1,0 +1,12 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.tex text eol=lf
+*.bib text eol=lf
+*.cff text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+models/**/*.h5 filter=lfs diff=lfs merge=lfs -text
+models/**/*.tflite filter=lfs diff=lfs merge=lfs -text
+analysis/outputs/*.npz filter=lfs diff=lfs merge=lfs -text

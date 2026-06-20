@@ -1,0 +1,34 @@
+# Dataset (download separately; see data/README.md)
+data/PlantVillage/
+data/PlantVillage_raw/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Generated experiment outputs
+evaluation_results/
+analysis/outputs/generated/
+
+# LaTeX build by-products
+manuscript/*.aux
+manuscript/*.bbl
+manuscript/*.blg
+manuscript/*.fdb_latexmk
+manuscript/*.fls
+manuscript/*.log
+manuscript/*.out
+manuscript/*.synctex.gz
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+

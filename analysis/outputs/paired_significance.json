@@ -1,0 +1,13 @@
+{
+  "test_images": 8162,
+  "baseline_accuracy": 0.9606714040676305,
+  "cbam_accuracy": 0.9670423915706935,
+  "paired_difference_percentage_points": 0.6370987503062975,
+  "paired_difference_95_ci_percentage_points": [
+    0.3134110837968067,
+    0.9607864168157882
+  ],
+  "baseline_only_correct": 65,
+  "cbam_only_correct": 117,
+  "mcnemar_exact_two_sided_p": 0.00014234618365990356
+}

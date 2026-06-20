@@ -1,0 +1,62 @@
+{
+  "InceptionV3": {
+    "input_shape": [
+      null,
+      299,
+      299,
+      3
+    ],
+    "parameters": 23939910,
+    "trainable_parameters": 7293158,
+    "nontrainable_parameters": 16646752,
+    "flops_batch1": 11451140004,
+    "gflops_batch1": 11.451140004,
+    "approx_gmacs": 5.725570002,
+    "last_conv_layer": "mixed10"
+  },
+  "MobileNetV2": {
+    "input_shape": [
+      null,
+      224,
+      224,
+      3
+    ],
+    "parameters": 3608678,
+    "trainable_parameters": 2877094,
+    "nontrainable_parameters": 731584,
+    "flops_batch1": 601968164,
+    "gflops_batch1": 0.601968164,
+    "approx_gmacs": 0.300984082,
+    "last_conv_layer": "out_relu"
+  },
+  "MobileNetV2+CBAM": {
+    "input_shape": [
+      null,
+      224,
+      224,
+      3
+    ],
+    "parameters": 4018377,
+    "trainable_parameters": 3286793,
+    "nontrainable_parameters": 731584,
+    "flops_batch1": 603868377,
+    "gflops_batch1": 0.603868377,
+    "approx_gmacs": 0.3019341885,
+    "last_conv_layer": "multiply_5"
+  },
+  "Xception": {
+    "input_shape": [
+      null,
+      224,
+      224,
+      3
+    ],
+    "parameters": 22998606,
+    "trainable_parameters": 11077478,
+    "nontrainable_parameters": 11921128,
+    "flops_batch1": 9114985060,
+    "gflops_batch1": 9.11498506,
+    "approx_gmacs": 4.55749253,
+    "last_conv_layer": "block14_sepconv2_act"
+  }
+}

@@ -1,0 +1,25 @@
+\section{Introduction}
+
+Plant diseases remain a major threat to global agricultural productivity, food security, and economic stability. Since many disease symptoms first appear on plant leaves, visual inspection is commonly used for early diagnosis. However, manual inspection is often time-consuming, subjective, and dependent on expert availability, particularly in rural or resource-constrained agricultural environments. Delayed or inaccurate diagnosis may lead to crop losses, inappropriate treatment, and unnecessary pesticide use. Therefore, accurate, scalable, and accessible plant disease detection systems are important for precision agriculture.
+
+Recent advances in deep learning have significantly improved image-based plant disease classification. Convolutional neural networks (CNNs) can automatically learn discriminative visual features from leaf images, reducing the dependence on handcrafted feature extraction. Publicly available datasets such as PlantVillage have further supported the development and benchmarking of deep learning models for plant disease recognition~\cite{mohanty2016,hughes2015open}. Nevertheless, many high-performing CNN architectures require large numbers of parameters and computationally expensive operations, limiting their practical use on mobile phones, embedded systems, and other resource-constrained devices.
+
+Lightweight architectures such as MobileNetV2 address this limitation by reducing computational complexity while maintaining competitive performance. MobileNetV2 uses inverted residual blocks and depthwise separable convolutions to reduce the number of operations required for feature extraction~\cite{sandler2018mobilenetv2}. However, lightweight models may have lower representational capacity than deeper architectures. Attention mechanisms offer a promising strategy for improving feature representation with modest additional computational cost. In particular, the Convolutional Block Attention Module (CBAM) applies sequential channel and spatial attention to emphasize informative feature responses while suppressing less relevant information~\cite{woo2018cbam}. This makes CBAM suitable for enhancing lightweight CNNs used in plant disease detection.
+
+This paper evaluates an attention-enhanced MobileNetV2 framework as a candidate for resource-constrained plant disease classification. CBAM is integrated after the final MobileNetV2 convolutional feature map and before global average pooling. The study does not claim that combining two established components is itself a new attention mechanism. Instead, its contribution is an explicitly defined late-attention configuration and an empirical analysis of the accuracy--cost trade-off under a common transfer-learning protocol. The model is evaluated on PlantVillage against MobileNetV2, InceptionV3, and Xception using classification and computational proxy metrics. Because PlantVillage uses controlled backgrounds and latency was not measured on a target edge device, the evaluation is evidence of compactness rather than proof of field or real-time deployment readiness.
+
+The main contributions of this paper are summarized as follows:
+
+\begin{itemize}
+    \item A reproducible late-attention configuration is specified by placing CBAM once, after MobileNetV2's final convolutional feature map and before global average pooling.
+    
+    \item The incremental effect of this configuration is quantified against an otherwise comparable MobileNetV2 baseline.
+    
+    \item A comparative evaluation is conducted against MobileNetV2, InceptionV3, and Xception using standard classification metrics on the PlantVillage dataset.
+    
+    \item The study reports parameter count, FLOPs/MACs, serialized model size, dynamic-range TFLite accuracy, and a reproducible laptop-CPU latency protocol, while separating this evidence from target-device claims.
+    
+    \item The limitations imposed by controlled-background data, a single training run, partially fine-tuned backbones, legacy generator subsampling, audited cross-split duplicates, and the absence of field-device and energy measurements are identified to delimit the conclusions.
+\end{itemize}
+
+The remainder of this paper is organized as follows. Section~2 reviews related work on plant disease detection, lightweight CNN architectures, and attention mechanisms. Section~3 presents the proposed MobileNetV2 + CBAM framework. Section~4 describes the experimental setup, results, discussion, and deployment-oriented computational analysis. Finally, Section~5 concludes the paper and outlines future research directions.

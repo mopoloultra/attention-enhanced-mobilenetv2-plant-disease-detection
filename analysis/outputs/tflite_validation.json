@@ -1,0 +1,173 @@
+{
+  "runtime": {
+    "tensorflow": "2.18.0",
+    "python": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "devices": [
+      "PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')"
+    ]
+  },
+  "quantization": "TensorFlow Lite Optimize.DEFAULT without a representative dataset: dynamic-range weight quantization with float32 model inputs and outputs.",
+  "models": {
+    "InceptionV3": {
+      "accuracy": 0.5694682675814752,
+      "precision_weighted": 0.5669390561292103,
+      "recall_weighted": 0.5694682675814752,
+      "f1_weighted": 0.5673265831189652,
+      "precision_macro": 0.533058607330188,
+      "recall_macro": 0.5437978951695325,
+      "f1_macro": 0.5358935831896254,
+      "auc_macro_ovr": 0.8706198145232698,
+      "images": 8162,
+      "test_images": 8162,
+      "input_size": 299,
+      "input_dtype": "<class 'numpy.float32'>",
+      "output_dtype": "<class 'numpy.float32'>",
+      "file_bytes": 24222672,
+      "duplicate_excluded": {
+        "accuracy": 0.5695892090741876,
+        "precision_weighted": 0.5670543581418133,
+        "recall_weighted": 0.5695892090741876,
+        "f1_weighted": 0.5674450696278619,
+        "precision_macro": 0.5330474625186344,
+        "recall_macro": 0.5437965577073345,
+        "f1_macro": 0.535887804996625,
+        "auc_macro_ovr": 0.8706883823374157,
+        "images": 8155,
+        "excluded_test_images": 7
+      },
+      "cpu_latency": {
+        "threads": 8,
+        "warmup_runs": 50,
+        "timed_runs": 200,
+        "batch_size": 1,
+        "preprocessing_included": false,
+        "mean_ms": 10.952865999999998,
+        "median_ms": 10.7121,
+        "std_ms": 1.331076309774913,
+        "iqr_ms": 0.9442750000000011,
+        "p95_ms": 12.269929999999999
+      }
+    },
+    "MobileNetV2": {
+      "accuracy": 0.5670178877726048,
+      "precision_weighted": 0.5657647768866457,
+      "recall_weighted": 0.5670178877726048,
+      "f1_weighted": 0.5654261641910169,
+      "precision_macro": 0.5377180228177225,
+      "recall_macro": 0.5371921945856641,
+      "f1_macro": 0.5362447611978001,
+      "auc_macro_ovr": 0.8721754201113692,
+      "images": 8162,
+      "test_images": 8162,
+      "input_size": 224,
+      "input_dtype": "<class 'numpy.float32'>",
+      "output_dtype": "<class 'numpy.float32'>",
+      "file_bytes": 3854088,
+      "duplicate_excluded": {
+        "accuracy": 0.5671367259350092,
+        "precision_weighted": 0.5658939939734118,
+        "recall_weighted": 0.5671367259350092,
+        "f1_weighted": 0.5655464178089425,
+        "precision_macro": 0.537678868148713,
+        "recall_macro": 0.5371921945856641,
+        "f1_macro": 0.5362215499187458,
+        "auc_macro_ovr": 0.872183005713331,
+        "images": 8155,
+        "excluded_test_images": 7
+      },
+      "cpu_latency": {
+        "threads": 8,
+        "warmup_runs": 50,
+        "timed_runs": 200,
+        "batch_size": 1,
+        "preprocessing_included": false,
+        "mean_ms": 49.8741105,
+        "median_ms": 45.376400000000004,
+        "std_ms": 26.490631616434513,
+        "iqr_ms": 37.806475000000006,
+        "p95_ms": 106.95931499999998
+      }
+    },
+    "MobileNetV2+CBAM": {
+      "accuracy": 0.5679980396961529,
+      "precision_weighted": 0.5656567885939253,
+      "recall_weighted": 0.5679980396961529,
+      "f1_weighted": 0.5660835859511206,
+      "precision_macro": 0.5377025681974823,
+      "recall_macro": 0.5366984912153312,
+      "f1_macro": 0.5361951442731164,
+      "auc_macro_ovr": 0.881302515271028,
+      "images": 8162,
+      "test_images": 8162,
+      "input_size": 224,
+      "input_dtype": "<class 'numpy.float32'>",
+      "output_dtype": "<class 'numpy.float32'>",
+      "file_bytes": 4268968,
+      "duplicate_excluded": {
+        "accuracy": 0.5681177191906805,
+        "precision_weighted": 0.5657760013767513,
+        "recall_weighted": 0.5681177191906805,
+        "f1_weighted": 0.566202034124088,
+        "precision_macro": 0.5376830902968792,
+        "recall_macro": 0.5366984912153312,
+        "f1_macro": 0.5361847425737644,
+        "auc_macro_ovr": 0.8813146109710558,
+        "images": 8155,
+        "excluded_test_images": 7
+      },
+      "cpu_latency": {
+        "threads": 8,
+        "warmup_runs": 50,
+        "timed_runs": 200,
+        "batch_size": 1,
+        "preprocessing_included": false,
+        "mean_ms": 52.457254000000006,
+        "median_ms": 45.42215,
+        "std_ms": 29.37375089975715,
+        "iqr_ms": 33.985125000000004,
+        "p95_ms": 102.54171499999998
+      }
+    },
+    "Xception": {
+      "accuracy": 0.5727762803234502,
+      "precision_weighted": 0.5718690430389216,
+      "recall_weighted": 0.5727762803234502,
+      "f1_weighted": 0.5722274949984856,
+      "precision_macro": 0.5415436444100687,
+      "recall_macro": 0.54422460086053,
+      "f1_macro": 0.5427177424833944,
+      "auc_macro_ovr": 0.8420385737322147,
+      "images": 8162,
+      "test_images": 8162,
+      "input_size": 224,
+      "input_dtype": "<class 'numpy.float32'>",
+      "output_dtype": "<class 'numpy.float32'>",
+      "file_bytes": 23665184,
+      "duplicate_excluded": {
+        "accuracy": 0.5729000613120785,
+        "precision_weighted": 0.5719915033400468,
+        "recall_weighted": 0.5729000613120785,
+        "f1_weighted": 0.5723507131265507,
+        "precision_macro": 0.5415338159172681,
+        "recall_macro": 0.5442249214641882,
+        "f1_macro": 0.5427129656426932,
+        "auc_macro_ovr": 0.8420482441096755,
+        "images": 8155,
+        "excluded_test_images": 7
+      },
+      "cpu_latency": {
+        "threads": 8,
+        "warmup_runs": 50,
+        "timed_runs": 200,
+        "batch_size": 1,
+        "preprocessing_included": false,
+        "mean_ms": 203.8190105,
+        "median_ms": 200.14515,
+        "std_ms": 62.055366635225354,
+        "iqr_ms": 85.30945,
+        "p95_ms": 304.13298499999996
+      }
+    }
+  }
+}

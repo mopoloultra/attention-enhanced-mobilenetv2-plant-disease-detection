@@ -1,0 +1,242 @@
+{
+  "tensorflow": "2.18.0",
+  "devices": [
+    "PhysicalDevice(name='/physical_device:CPU:0', device_type='CPU')"
+  ],
+  "models": {
+    "InceptionV3": {
+      "path": "models/h5/best_cone_model.h5",
+      "bytes": 155043680,
+      "loaded": true,
+      "input_shape": [
+        null,
+        299,
+        299,
+        3
+      ],
+      "output_shape": [
+        null,
+        38
+      ],
+      "parameters": 23939910,
+      "trainable_parameters": 7293158,
+      "nontrainable_parameters": 16646752,
+      "layers": 316,
+      "layer_names": [
+        "activation_87",
+        "activation_88",
+        "activation_91",
+        "activation_92",
+        "batch_normalization_93",
+        "activation_85",
+        "mixed9_1",
+        "concatenate_1",
+        "activation_93",
+        "mixed10",
+        "global_average_pooling2d",
+        "dropout",
+        "dense",
+        "dropout_1",
+        "dense_1"
+      ],
+      "tflite": {
+        "bytes": 24222672,
+        "inputs": [
+          {
+            "name": "serving_default_input_1:0",
+            "index": 0,
+            "shape": [
+              1,
+              299,
+              299,
+              3
+            ],
+            "shape_signature": [
+              -1,
+              299,
+              299,
+              3
+            ],
+            "dtype": "<class 'numpy.float32'>",
+            "quantization": [
+              0.0,
+              0
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "name": "StatefulPartitionedCall:0",
+            "index": 319,
+            "shape": [
+              1,
+              38
+            ],
+            "shape_signature": [
+              -1,
+              38
+            ],
+            "dtype": "<class 'numpy.float32'>",
+            "quantization": [
+              0.0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    "MobileNetV2": {
+      "path": "models/h5/best_rhombus_model.h5",
+      "bytes": 38025824,
+      "loaded": false,
+      "error": "TypeError(\"Error when deserializing class 'DepthwiseConv2D' using config={'name': 'expanded_conv_depthwise', 'trainable': False, 'dtype': 'float32', 'kernel_size': [3, 3], 'strides': [1, 1], 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': [1, 1], 'groups': 1, 'activation': 'linear', 'use_bias': False, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'bias_regularizer': None, 'activity_regularizer': None, 'bias_constraint': None, 'depth_multiplier': 1, 'depthwise_initializer': {'class_name': 'GlorotUniform', 'config': {'seed': None}}, 'depthwise_regularizer': None, 'depthwise_constraint': None}.\\n\\nException encountered: Unrecognized keyword arguments passed to DepthwiseConv2D: {'groups': 1}\")",
+      "tflite": {
+        "bytes": 3854088,
+        "inputs": [
+          {
+            "name": "serving_default_input_1:0",
+            "index": 0,
+            "shape": [
+              1,
+              224,
+              224,
+              3
+            ],
+            "shape_signature": [
+              -1,
+              224,
+              224,
+              3
+            ],
+            "dtype": "<class 'numpy.float32'>",
+            "quantization": [
+              0.0,
+              0
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "name": "StatefulPartitionedCall:0",
+            "index": 180,
+            "shape": [
+              1,
+              38
+            ],
+            "shape_signature": [
+              -1,
+              38
+            ],
+            "dtype": "<class 'numpy.float32'>",
+            "quantization": [
+              0.0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    "MobileNetV2+CBAM": {
+      "path": "models/h5/best_cube_model.h5",
+      "bytes": 42972200,
+      "loaded": false,
+      "error": "TypeError(\"Error when deserializing class 'DepthwiseConv2D' using config={'name': 'expanded_conv_depthwise', 'trainable': False, 'dtype': 'float32', 'kernel_size': [3, 3], 'strides': [1, 1], 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': [1, 1], 'groups': 1, 'activation': 'linear', 'use_bias': False, 'bias_initializer': {'class_name': 'Zeros', 'config': {}}, 'bias_regularizer': None, 'activity_regularizer': None, 'bias_constraint': None, 'depth_multiplier': 1, 'depthwise_initializer': {'class_name': 'GlorotUniform', 'config': {'seed': None}}, 'depthwise_regularizer': None, 'depthwise_constraint': None}.\\n\\nException encountered: Unrecognized keyword arguments passed to DepthwiseConv2D: {'groups': 1}\")",
+      "tflite": {
+        "bytes": 4268968,
+        "inputs": [
+          {
+            "name": "serving_default_input_3:0",
+            "index": 0,
+            "shape": [
+              1,
+              224,
+              224,
+              3
+            ],
+            "shape_signature": [
+              -1,
+              224,
+              224,
+              3
+            ],
+            "dtype": "<class 'numpy.float32'>",
+            "quantization": [
+              0.0,
+              0
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "name": "StatefulPartitionedCall:0",
+            "index": 208,
+            "shape": [
+              1,
+              38
+            ],
+            "shape_signature": [
+              -1,
+              38
+            ],
+            "dtype": "<class 'numpy.float32'>",
+            "quantization": [
+              0.0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    "Xception": {
+      "path": "models/h5/best_prism_model.h5",
+      "bytes": 181119704,
+      "loaded": false,
+      "error": "TypeError(\"Error when deserializing class 'SeparableConv2D' using config={'name': 'block2_sepconv1', 'trainable': False, 'dtype': 'float32', 'filters': 128, 'kernel_size': [3, 3], 'strides': [1, 1], 'padding': 'same', 'data_format': 'channels_last', 'dilation_rate': [1, 1], 'groups': 1, 'activation': 'linear', 'use_bias': False, 'kernel_initializer': {'class_name': 'GlorotUniform', 'config': {'seed': None}}, 'bias_initializer': {'class_name': 'Zeros', 'config': {}, 'shared_object_id': 21}, 'kernel_regularizer': None, 'bias_regularizer': None, 'activity_regularizer': None, 'kernel_constraint': None, 'bias_constraint': None, 'depth_multiplier': 1, 'depthwise_initializer': {'class_name': 'GlorotUniform', 'config': {'seed': None}}, 'pointwise_initializer': {'class_name': 'GlorotUniform', 'config': {'seed': None}}, 'depthwise_regularizer': None, 'pointwise_regularizer': None, 'depthwise_constraint': None, 'pointwise_constraint': None}.\\n\\nException encountered: Unrecognized keyword arguments passed to SeparableConv2D: {'groups': 1, 'kernel_initializer': {'class_name': 'GlorotUniform', 'config': {'seed': None}}, 'kernel_regularizer': None, 'kernel_constraint': None}\")",
+      "tflite": {
+        "bytes": 23665184,
+        "inputs": [
+          {
+            "name": "serving_default_input_2:0",
+            "index": 0,
+            "shape": [
+              1,
+              224,
+              224,
+              3
+            ],
+            "shape_signature": [
+              -1,
+              224,
+              224,
+              3
+            ],
+            "dtype": "<class 'numpy.float32'>",
+            "quantization": [
+              0.0,
+              0
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "name": "StatefulPartitionedCall:0",
+            "index": 230,
+            "shape": [
+              1,
+              38
+            ],
+            "shape_signature": [
+              -1,
+              38
+            ],
+            "dtype": "<class 'numpy.float32'>",
+            "quantization": [
+              0.0,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

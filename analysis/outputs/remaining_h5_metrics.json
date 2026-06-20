@@ -1,0 +1,32 @@
+{
+  "MobileNetV2": {
+    "accuracy": 0.9677775055133546,
+    "precision_weighted": 0.969273067892152,
+    "recall_weighted": 0.9677775055133546,
+    "f1_weighted": 0.9673399835766678,
+    "precision_macro": 0.9643711909601761,
+    "recall_macro": 0.9566417479133943,
+    "f1_macro": 0.9588859359052979,
+    "auc_macro_ovr": 0.9996522791888479
+  },
+  "MobileNetV2+CBAM": {
+    "accuracy": 0.9716981132075472,
+    "precision_weighted": 0.9732340233781476,
+    "recall_weighted": 0.9716981132075472,
+    "f1_weighted": 0.9715448845016752,
+    "precision_macro": 0.9669594135387447,
+    "recall_macro": 0.961518744746293,
+    "f1_macro": 0.9630344274968884,
+    "auc_macro_ovr": 0.9996572145952469
+  },
+  "Xception": {
+    "accuracy": 0.9829698603283509,
+    "precision_weighted": 0.9831680268812593,
+    "recall_weighted": 0.9829698603283509,
+    "f1_weighted": 0.9829833076295547,
+    "precision_macro": 0.9787162496808919,
+    "recall_macro": 0.9783881667576176,
+    "f1_macro": 0.9783914224247902,
+    "auc_macro_ovr": 0.9998460914080252
+  }
+}

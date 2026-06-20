@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite the associated manuscript."
+title: "An Efficient Attention-Enhanced MobileNetV2 Framework for Plant Disease Detection on Resource-Constrained Devices"
+type: software
+authors:
+  - family-names: Udoh
+    given-names: Emmanuel
+    orcid: "https://orcid.org/0009-0008-7624-2520"
+  - family-names: Alaoui Mhamdi
+    given-names: Mohammed Ayoub
+  - family-names: Allili
+    given-names: Madjid
+version: 1.0.0
+date-released: 2026-06-20
+url: "https://github.com/mopoloultra/attention-enhanced-mobilenetv2-plant-disease-detection"
+repository-code: "https://github.com/mopoloultra/attention-enhanced-mobilenetv2-plant-disease-detection"
+keywords:
+  - plant disease detection
+  - MobileNetV2
+  - CBAM
+  - TensorFlow Lite
+  - edge computing
+

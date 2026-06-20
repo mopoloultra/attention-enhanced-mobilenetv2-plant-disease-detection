@@ -1,0 +1,23 @@
+[
+  {
+    "case": "CBAM corrects baseline",
+    "path": "data/PlantVillage/test/Apple___Apple_scab/7c66bda4-301c-4987-85b8-fd8230c5a2f2___FREC_Scab 3324_final_masked.jpg",
+    "true": "Apple___Apple_scab",
+    "baseline": "Apple___healthy",
+    "cbam": "Apple___Apple_scab"
+  },
+  {
+    "case": "Both correct",
+    "path": "data/PlantVillage/test/Apple___Apple_scab/01f3deaa-6143-4b6c-9c22-620a46d8be04___FREC_Scab 3112_final_masked.jpg",
+    "true": "Apple___Apple_scab",
+    "baseline": "Apple___Apple_scab",
+    "cbam": "Apple___Apple_scab"
+  },
+  {
+    "case": "Both incorrect",
+    "path": "data/PlantVillage/test/Apple___Apple_scab/6643566f-d980-4bdb-88d7-4d3ab3c771fa___FREC_Scab 3038_final_masked.jpg",
+    "true": "Apple___Apple_scab",
+    "baseline": "Tomato___Late_blight",
+    "cbam": "Tomato___Late_blight"
+  }
+]
