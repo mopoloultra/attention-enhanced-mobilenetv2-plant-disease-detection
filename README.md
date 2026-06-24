@@ -128,7 +128,7 @@ python tools/verify_checksums.py
 
 ## Citation
 
-The journal DOI @ [![DOI](https://zenodo.org/badge/1275518776.svg)](https://doi.org/10.5281/zenodo.20778518)
+[![DOI](https://zenodo.org/badge/1275518776.svg)](https://doi.org/10.5281/zenodo.20778518)
 
 ## License
 
